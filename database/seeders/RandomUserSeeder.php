@@ -13,12 +13,11 @@ class RandomUserSeeder extends Seeder
      */
     public function run(): void
     {
-        // One known admin 
-        User::create([
-            'name'     => 'Admin',
-            'email'    => 'admin@gmail.com',
-            'password' => 'asdqwe123',
-        ]);
+        // One known login: tarsoft@gmail.com / password
+        User::updateOrCreate(
+            ['email' => 'tarsoft@gmail.com'],
+            ['name' => 'Tarsoft', 'password' => 'password'],
+        );
 
         // 5 random users via the factory
         // Default password: "password"
