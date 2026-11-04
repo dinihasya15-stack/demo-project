@@ -12,7 +12,7 @@ Laravel app for managing products. Each product has a name, a color and a size.
 
 ## Requirements
 
-PHP 8.2+, Composer, Node.js, MySQL
+PHP 8.3+, Composer, Node.js, MySQL
 
 ## Setup
 
